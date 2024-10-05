@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Hamd</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <nav class="main">
+        <ul>
+            <li class="brand"><img src="logo.png">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="hamdList">
+            <h1>My great Hamd</h1>
+            <div class="hamdItem">
+                <img src="nature5.jpg" alt="hamd img">
+                <span class="songName">My Hamd</span>
+                <span class="hamdListPlay"><span class="timeStamp">06:30<i id="0" class=" hamdItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+            <div class="hamdItem">
+                <img src="nature6.jpg" alt="hamd img">
+                <span class="songName">My hamd</span>
+                <span class="hamdListPlay"><span class="timeStamp">06:30<i id="1" class=" hamdItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+            <div class="hamdItem ">
+                <img src="nature7.jpg" alt="hamd img">
+                <span class="songName">My Hamd </span>
+                <span class="hamdListPlay"><span class="timeStamp">06:30<i id="2" class=" hamdItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+            <div class="hamdItem">
+                <img src="nightNature.jpg" alt="hamd img">
+                <span class="songName">My Hamd </span>
+                <span class="hamdListPlay"><span class="timeStamp">06:30<i id="3" class=" hamdItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+            <div class="hamdItem">
+                <img src="nightNature2.jpg" alt="hamd img">
+                <span class="songName">My Hamd </span>
+                <span class="hamdListPlay"><span class="timeStamp">06:30<i id="4" class=" hamdItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <input type="range" id="hamdBar"  value="0" min="0" max="100" name="range">
+        <div class="icons">
+            <i class="fa-solid fa-2x fa-step-backward" id="previous"></i>
+            <i class="fa-solid fa-2x fa-play-circle" id="masterPlay"></i>
+            <i class="fa-solid fa-2x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" id="gif" alt="Hamd graph">
+            <span id="masterSongName">Har Eik Janib Udasii hai...</span>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="spotify.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Protest Revolution', sans-serif;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    background: linear-gradient(to bottom right ,rgb(0, 0, 0),rgb(63, 56, 56));
+}
+
+ul{
+    height:55px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color:#fff;
+    padding-inline: 1px;
+    list-style-type: none;
+    border-bottom: 1px solid #ababab;
+    font-family: 'Protest Revolution', sans-serif;
+}
+ul li{
+    margin-inline: 10px;
+    font-size: 13px;
+}
+
+.brand{
+    display:flex;
+    align-items: center;
+    font-size: 25px;
+}
+.brand img{
+    width:35px;
+    margin:10px;
+    box-shadow: 0 0 10px 0 white;
+    border-radius: 50%;
+}
+
+/*  Now we do styling of our container */
+
+.container{
+    min-height: 71vh;
+    background-color: aqua;
+    margin: 20px auto;
+    background-color: rgb(56, 51, 51);
+    color:white;
+    border-radius: 15px;
+    padding:20px;
+    width:75%;
+    background-image: url('nature.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Protest Revolution', sans-serif;
+}
+
+.hamdItem{
+    width:60%;
+    height:45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color:black;
+    border-radius: 5px;
+    padding:5px;
+    margin-block: 10px;
+    box-shadow: 0 0 20px rgb(127, 126, 126);
+    font-family: 'Protest Revolution', sans-serif;
+}
+.hamdItem img{
+    width:60px;
+    border-radius: 2px;
+    height:35px;
+}
+.hamdItem i{
+    margin:5px;
+    cursor: pointer;
+}
+
+@media screen and(min-width:600px){
+    .hamdItem{
+        width:70%;
+    }
+}
+
+
+.bottom{
+    position: sticky;
+    height:74.2px;
+    bottom:0;
+    border-top: 1px solid #ababba;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#fff;
+    box-shadow: 10px solid white;
+}
+
+#hamdBar{
+    width:45vw;
+    margin-top: 10px;
+    cursor:pointer;
+    box-shadow: 0 0 3px 0 white;
+}
+.bottom .icons{
+    margin-top: 2px;
+}
+.icons i{
+    padding:5px;
+    opacity:0.7;
+    cursor:pointer;
+}
+.icons i:hover{
+    opacity:1;
+    box-shadow: 0 0 10px 0 #ababab;
+    border-radius: 50%;
+    background-color: #626161;
+}
+
+.songInfo img{
+    width: 50px;
+    opacity: 0;
+    box-shadow: 0 0 10px 0 white;
+    transition: opacity 1s ease-in;
+}
+.songInfo{
+    position: absolute;
+    left:1vw;
+    margin-top: 30px;
+}
+.songInfo span{
+    margin-inline: 6px;
+    font-size: 20px;
+}
